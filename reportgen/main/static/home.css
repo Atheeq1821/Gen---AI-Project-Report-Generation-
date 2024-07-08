@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-y: hidden;
+}
+.main{
+    width: 100%;
+    background-color: #F9AAD0;
+    height: 100vh;
+    
+}
+.left{
+    width: 40%;
+    height: inherit;
+    background-color: #AD53A6;
+}
+.content{
+    padding: 5rem 3rem;
+    height: 100vh;
+}
+h1{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.form-col{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+label{
+    font-size: 16px;
+    color: aliceblue;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 10px;
+}
+input{
+    width: 80%;
+    height: 50px;
+    font-size: 20px;
+    padding: 16px 10px;
+    border-style: hidden;
+    border-radius: 10px;
+    color: #AD53A6;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+*:focus{
+    outline: none;
+}
+
+
+
+
+.bn632-hover {
+    width: 160px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:focus {
+    outline: none;
+  }
+  
+  .bn632-hover.bn21 {
+    background-image: linear-gradient(
+      to right,
+      #fc6076,
+      #ff9a44,
+      #ef9d43,
+      #e75516
+    );
+}

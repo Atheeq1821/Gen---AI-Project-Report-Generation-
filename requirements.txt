@@ -1,4 +1,11 @@
 pandas
 numpy
 django
+langchain_openai 
+langchain_core
+langchain_community
+langserve
+langchain-groq
+langchainhub
+python-dotenv
 -e .

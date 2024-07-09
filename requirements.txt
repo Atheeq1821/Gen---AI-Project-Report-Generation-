@@ -8,4 +8,5 @@ langserve
 langchain-groq
 langchainhub
 python-dotenv
+python-docx
 -e .

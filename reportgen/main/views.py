@@ -59,7 +59,7 @@ def generate_report(domain,objectives,abstract,title):
     report.add_content(heading="Methodology",content=methodology_content)
     logging.info("Methodology content added")
 
-    implement_content = prompts.generate_implementations()
+    implement_content = prompts.generate_implementation()
     logging.info("Implementation content completed")
 
     report.add_content(heading="Implementations",content=implement_content)
@@ -89,7 +89,7 @@ def generate_report(domain,objectives,abstract,title):
     report.add_content(heading="References",content=references_content)
     logging.info("References content added")
 
-    appendix_content = prompts.generate_appendix()
+    appendix_content = prompts.generate_appendices()
     logging.info("Appendix content completed")
 
     report.add_content(heading="Appendix",content=appendix_content)

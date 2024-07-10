@@ -5,25 +5,39 @@ from .llm import generate_abstract
 from .llm import create_title
 from .report import Report
 from .logger import logging
+
 def get_data_from_form(request):
     if request.method == "POST":
         domain = request.POST.get("domain")
         objectives = request.POST.get("objectives")
         logging.info(f"Received data from user with domain is {domain} and objectives are {objectives}")
+        #Debugging
+        abstract="""
+        Abstract:
+            In this final year project, we aimed to develop an accurate tomato disease classification system using deep learning techniques. Our approach involved training a convolutional neural network (CNN) on a large dataset of labeled images of tomato fruits and vegetables, each with a different disease. By leveraging the power of deep learning, we achieved a remarkable 100% accuracy in classifying tomato diseases, significantly outperforming traditional machine learning methods. Our CNN model consisted of multiple convolutional layers, followed by pooling layers and a fully connected layer for classification. We evaluated the performance of our model using various evaluation metrics such as precision, recall, and F1-score, and observed that it consistently outperformed existing methods in terms of accuracy. The results of this project demonstrate the potential of deep learning techniques in solving complex problems in agriculture, such as tomato disease classification, with high accuracy and efficiency.
+        """
+        pr = Prompts(domain="Deep Learning",objectives="Tomato disease classification,100% accuracy",abstract=abstract)
+        intro = pr.generate_methodology()
+        logging.info(f"{intro}")
 
+
+
+
+
+
+        #########################################################
         abstract = access_model_abstract(domain, objectives)
         logging.info("Abtract generation completed")
 
         project_title = create_title(abstract=abstract)
         logging.info(f" Generated Project title is {project_title}")
-
         downloadable=generate_report(domain=domain, objectives=objectives,abstract=abstract,title=project_title)
         logging.info("Report generation completed")
         response = HttpResponse(downloadable.getvalue(), content_type='application/vnd.openxmlformats-officedocument.wordprocessingml.document')
         response['Content-Disposition'] = f'attachment; filename=generated_project.docx'
         logging.info("Download started...")
         return response
-    logging.info("The End")
+    logging.info("The Start")  
     return render(request,"home.html")
 
 
@@ -31,7 +45,7 @@ def access_model_abstract(domain, objectives):
     logging.info("Abstract generation started")
     abstract_content = generate_abstract(domain=domain, objectives=objectives)
     return abstract_content
-def generate_report(domain,objectives,abstract,title):
+def generate_report(domain,objectives,abstract,title): 
     prompts = Prompts(domain=domain, objectives=objectives,abstract=abstract)
     logging.info("Report generation started")
 

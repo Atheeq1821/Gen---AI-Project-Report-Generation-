@@ -11,21 +11,21 @@ def get_data_from_form(request):
         domain = request.POST.get("domain")
         objectives = request.POST.get("objectives")
         logging.info(f"Received data from user with domain is {domain} and objectives are {objectives}")
-        #Debugging
-        abstract="""
-        Abstract:
-            In this final year project, we aimed to develop an accurate tomato disease classification system using deep learning techniques. Our approach involved training a convolutional neural network (CNN) on a large dataset of labeled images of tomato fruits and vegetables, each with a different disease. By leveraging the power of deep learning, we achieved a remarkable 100% accuracy in classifying tomato diseases, significantly outperforming traditional machine learning methods. Our CNN model consisted of multiple convolutional layers, followed by pooling layers and a fully connected layer for classification. We evaluated the performance of our model using various evaluation metrics such as precision, recall, and F1-score, and observed that it consistently outperformed existing methods in terms of accuracy. The results of this project demonstrate the potential of deep learning techniques in solving complex problems in agriculture, such as tomato disease classification, with high accuracy and efficiency.
-        """
-        pr = Prompts(domain="Deep Learning",objectives="Tomato disease classification,100% accuracy",abstract=abstract)
-        intro = pr.generate_methodology()
-        logging.info(f"{intro}")
+        # #Debugging
+        # abstract="""
+        # Abstract:
+        #     In this final year project, we aimed to develop an accurate tomato disease classification system using deep learning techniques. Our approach involved training a convolutional neural network (CNN) on a large dataset of labeled images of tomato fruits and vegetables, each with a different disease. By leveraging the power of deep learning, we achieved a remarkable 100% accuracy in classifying tomato diseases, significantly outperforming traditional machine learning methods. Our CNN model consisted of multiple convolutional layers, followed by pooling layers and a fully connected layer for classification. We evaluated the performance of our model using various evaluation metrics such as precision, recall, and F1-score, and observed that it consistently outperformed existing methods in terms of accuracy. The results of this project demonstrate the potential of deep learning techniques in solving complex problems in agriculture, such as tomato disease classification, with high accuracy and efficiency.
+        # """
+        # pr = Prompts(domain="Deep Learning",objectives="Tomato disease classification,100% accuracy",abstract=abstract)
+        # intro = pr.generate_conclusion()
+        # logging.info(f"{intro}")
 
 
 
 
 
 
-        #########################################################
+        # #########################################################
         abstract = access_model_abstract(domain, objectives)
         logging.info("Abtract generation completed")
 

@@ -137,7 +137,7 @@ Begin your response with 'Content of the literature section' and then proceed wi
                     - Challenges faced and how they were overcome
                 Focus only on these subsections. Do not include a title, abstract, or any other sections. Use appropriate technical terminology and ensure the content is coherent and implementable. 
 
-Begin your response with '6. Implementation' and then proceed with the subsections.              
+Begin your response with the content of the implementation section and then proceed with the subsections.              
                 """)
 
             ]
@@ -162,7 +162,7 @@ Begin your response with '6. Implementation' and then proceed with the subsectio
                     
                 Focus only on these subsections. Do not include a title, abstract, or any other sections. Use appropriate technical terminology and ensure the content is coherent and implementable. 
 
-Begin your response with '7. Result' and then proceed with the subsections.
+Begin your response with the content of the result section and then proceed with the subsections.
                 """)
 
             ]
@@ -185,7 +185,7 @@ Begin your response with '7. Result' and then proceed with the subsections.
                     - Potential improvements and future work
                 Focus only on these subsections. Do not include a title, abstract, or any other sections. Use appropriate technical terminology and ensure the content is coherent and implementable. 
 
-Begin your response with '8. Discussion' and then proceed with the subsections.
+Begin your response with the content of the discussion section  and then proceed with the subsections.
                 """)
 
             ]
@@ -208,7 +208,7 @@ Begin your response with '8. Discussion' and then proceed with the subsections.
                     - Impact and significance of the project
                 Focus only on these subsections. Do not include a title, abstract, or any other sections. Use appropriate technical terminology and ensure the content is coherent and implementable. 
 
-Begin your response with '9. conclusion' and then proceed with the subsections.
+Begin your response with the content of the conclusion section and then proceed with the subsections.
                 """)
 
             ]
@@ -228,7 +228,7 @@ Begin your response with '9. conclusion' and then proceed with the subsections.
                 10. References (in IEEE format)
                 Focus only on this section. Do not include a title, abstract, or any other sections. Use appropriate technical terminology and ensure the content is coherent and implementable. 
 
-Begin your response with '10. References' and then proceed.
+Begin your response with the content of the references section and then proceed.
                 """)
 
             ]
@@ -250,7 +250,7 @@ Begin your response with '10. References' and then proceed.
                     - Additional data or results
                 Focus only on these subsections. Do not include a title, abstract, or any other sections. Use appropriate technical terminology and ensure the content is coherent and implementable. 
 
-Begin your response with '11. Appendices' and then proceed with the subsections.
+Begin your response with the content of the appendices section and then proceed with the subsections.
                 """)
 
             ]

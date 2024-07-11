@@ -36,8 +36,9 @@ def create_title(abstract):
         title_prompt=ChatPromptTemplate.from_messages(
             [
                 ("system","You are an expert engineering consultant tasked with creating a complete final year project and report. Use the following information to generate a best project title and IEEE-formatted report:"),
-                ("user",f"""Abstract of the project: {abstract}.
-                Generate only title of the project for the complete engineering final year project and report. Must be in single line""")
+                ("user",f"""Abstract of the project: 
+                 {abstract}
+                Generate only title of the project for the complete engineering final year project and report. Must be in single line and creative""")
             ])
         chain=title_prompt|llm|output_parser
         logging.info("Title content returning")
@@ -63,7 +64,7 @@ class Prompts:
                     - Scope of the Project
                 Focus only on these subsections. Do not include a title, abstract, or any other sections. Use appropriate technical terminology and ensure the content is coherent and implementable. 
 
-Begin your response with '3. Introduction' and then proceed with the subsections.
+Begin your response with content of the Introduction section and then proceed with the subsections.
                 """)
 
             ]
@@ -79,14 +80,14 @@ Begin your response with '3. Introduction' and then proceed with the subsections
                ("user",f"""
                 Below is the abstract of the project :
                 {self.abstract}
-                Based on this abstract, write the Introduction section of the report. Include the following subsections:
+                Based on this abstract, write the Literature section of the report. Include the following subsections:
                 4. Literature Review
                     - Overview of relevant technologies and methodologies
                     - Analysis of similar existing solutions
                     - Identification of research gaps
                 Focus only on these subsections. Do not include a title, abstract, or any other sections. Use appropriate technical terminology and ensure the content is coherent and implementable. 
 
-Begin your response with '4. Literature' and then proceed with the subsections.
+Begin your response with 'Content of the literature section' and then proceed with the subsections.
                     
                 """)
 
@@ -112,7 +113,7 @@ Begin your response with '4. Literature' and then proceed with the subsections.
                 
                 Focus only on these subsections. Do not include a title, abstract, or any other sections. Use appropriate technical terminology and ensure the content is coherent and implementable. 
 
-                Begin your response with '5. Methodology' and then proceed with the subsections.
+                Begin your response with content of the methodology section and then proceed with the subsections.
                 """)
 
             ]

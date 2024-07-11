@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'home.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,500;0,600;0,700;0,800;0,900;1,100;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Report Generation</title>
 </head>
 <body>
     <section class="main">
         <div class="left">
             <div class="content">
-                <h1>Report Generation</h1>
+                <h1 id="project">PROJECT</h1>
+                <h1 id="gen">Report Generation</h1>
                 <form action="{% url 'get_data_from_form' %}" method="POST">
                     {% csrf_token %}
                     <div class="form-col">
@@ -25,15 +26,24 @@
                         <label for="objectives">Enter Objectives separated by commas :</label>
                         <input type="text" id="objectives" name = "objectives">
                     </div>
-                    <button class="bn632-hover bn21" type="submit">Submit</button>
+                    <button class="bn632-hover bn21" type="submit" id="btn">Submit</button>
                 </form>
+                <div class="message" id="message">
+                    Your project is being creating Please wait......<br>
+                    (Time required to generate a complete report is based on your system capabilities)
+                </div>
             </div>
         </div>
         <div class="right">
             <div class="img-div">
+                <div class="right-content">
+                    <div class="cont-1">
+                        <h2>Gen-AI Based Project Report Generation</h2>
+                    </div>
+                    <h3>Powered by - llama-2</h3>
+                </div>
             </div>
         </div>
     </section>
-    
 </body>
 </html>

@@ -53,4 +53,4 @@ This pipeline allows for a seamless, automated, AI-driven approach to creating a
 
 ## Contact
 
-[Linkedin](https://www.linkedin.com/in/syed-atheequr-rahaman-ab6310214/]
+[Linkedin](https://www.linkedin.com/in/syed-atheequr-rahaman-ab6310214/])

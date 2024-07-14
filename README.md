@@ -1,6 +1,6 @@
 # AI based Project report Generation
 ![LLM Image](llm.png)
-How it works -> [Video]()
+How it works -> [Video](https://www.linkedin.com/posts/syed-atheequr-rahaman-ab6310214_ai-machinelearning-webdevelopment-activity-7218167161981218816-ZXVU?utm_source=share&utm_medium=member_android )
 
 This project uses Django and Llama 2 to automatically generate comprehensive final year projects and reports based on user-provided domain and objectives.
 

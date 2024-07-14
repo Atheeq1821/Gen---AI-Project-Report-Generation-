@@ -1,4 +1,5 @@
-# Django LLM Project Generator
+# AI based Project report Generation
+![LLM Image](llm.png)
 How it works -> [Video]()
 
 This project uses Django and Llama 2 to automatically generate comprehensive final year projects and reports based on user-provided domain and objectives.

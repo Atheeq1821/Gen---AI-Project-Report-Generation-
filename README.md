@@ -30,7 +30,7 @@ This project uses Django and Llama 2 to automatically generate comprehensive fin
 - Django
 - Llama 2 (Large Language Model)
 - Langchain Framework
-- Ollama2 - LLM model
+- Ollama
 
 ## How It Works
 
